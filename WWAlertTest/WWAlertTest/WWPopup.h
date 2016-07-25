@@ -69,6 +69,7 @@ typedef NS_ENUM(NSInteger, WWPopupMaskType) {
     WWPopupMaskTypeNone = 0, // Allow interaction with underlying views.
     WWPopupMaskTypeClear, // Don't allow interaction with underlying views.
     WWPopupMaskTypeDimmed, // Don't allow interaction with underlying views, dim background.
+    WWPopupMaskTypeLightGray,
 };
 
 // WWPopupLayout structure and maker functions

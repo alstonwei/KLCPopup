@@ -558,7 +558,10 @@ const WWPopupLayout WWPopupLayoutCenter = { WWPopupHorizontalLayoutCenter, WWPop
         };
         if (_maskType == WWPopupMaskTypeDimmed) {
             _backgroundView.backgroundColor = [UIColor colorWithRed:(0.0/255.0f) green:(0.0/255.0f) blue:(0.0/255.0f) alpha:self.dimmedMaskAlpha];
-        } else {
+        } else  if (_maskType == WWPopupMaskTypeLightGray){
+            _backgroundView.backgroundColor = [UIColor colorWithRed:0/255.f green:0/255.f blue:0/255.f alpha:0.1];
+        }
+        else{
             _backgroundView.backgroundColor = [UIColor clearColor];
         }
         

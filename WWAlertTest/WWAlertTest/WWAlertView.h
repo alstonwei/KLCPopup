@@ -14,11 +14,22 @@ struct WWAlertViewHeightLimit {
     CGFloat limitMax;
 };
 
+typedef void(^WWAlertViewButtonConfigBlock)(UIButton* btn,id otherInfo);
+/*!
+ *  @brief alert 按钮点击事件回调block
+ *
+ *  @param btn
+ *  @param otherInfo
+ *
+ *  @return 是否dismiss
+ */
+typedef BOOL(^WWAlertViewButtonActionBlock)(UIButton* btn,id otherInfo);
+
 typedef struct WWAlertViewHeightLimit WWAlertViewHeightLimit;
 CG_INLINE WWAlertViewHeightLimit
 WWAlertViewHeightLimitMake(CGFloat min, CGFloat max)
 {
-    WWAlertViewHeightLimit limit; limit.limitMin = min; limit.limitMax = min; return limit;
+    WWAlertViewHeightLimit limit; limit.limitMin = min; limit.limitMax = max; return limit;
 };
 
 
@@ -31,10 +42,32 @@ typedef NS_ENUM(NSInteger,WWAlertViewType)
 };
 @interface WWAlertView : WWPopup
 
-
 @property(nonatomic,assign)CGFloat alertWidth;
+@property(nonatomic,assign)CGFloat alertConerRedius;
 @property(nonatomic)WWAlertViewHeightLimit alertViewHeightLimit;
 @property(nonatomic,assign)WWAlertViewType alertType;
+
+/*标题*/
+@property(nonatomic,copy)NSString* alertTitle;
+@property(nonatomic,strong) NSDictionary* alertTitleAttributes;
+@property(nonatomic,strong) UILabel* alertTitleLable;
+/*内容*/
+@property(nonatomic,copy)NSString* alertContentText;
+@property(nonatomic,strong) NSDictionary* alertContentTextAttributes;
+@property(nonatomic,strong) UILabel* alertContentTextLable;
+@property(nonatomic,strong)NSMutableArray* bottomButtons;
+
+@property(nonatomic,strong)UIImageView* alertIconImageView;
+
+@property(nonatomic,assign)BOOL autoDismissed;
+
++(WWAlertView*)alertWithTitle:(NSString*)title
+                  contentText:(NSString*)contentText;
+
++(WWAlertView*)alertWithTitle:(NSString*)title
+                   attributes:(nullable NSDictionary<NSString *,id> *)attributes
+                  contentText:(NSString*)contentText
+                   attributes:(nullable NSDictionary<NSString *,id> *)contentTextAttributes;
 
 +(WWAlertView*)showAlert;
 
@@ -50,5 +83,15 @@ typedef NS_ENUM(NSInteger,WWAlertViewType)
                        attributes:(nullable NSDictionary<NSString *,id> *)attributes
                       contentText:(NSString*)contentText
                        attributes:(nullable NSDictionary<NSString *,id> *)contentTextAttributes;
+
+-(void)addCancelButtonWithTitle:(NSString*)title
+             actionBlock:(WWAlertViewButtonActionBlock)actionBlock;
+
+-(void)addConfirmButtonWithTitle:(NSString*)title
+                     actionBlock:(WWAlertViewButtonActionBlock)actionBlock;
+-(void)addButtonWithTitle:(NSString*)title
+              configBlock:(WWAlertViewButtonConfigBlock)configBlock
+              actionBlock:(WWAlertViewButtonActionBlock)actionBlock;
+
 
 @end

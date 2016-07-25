@@ -22,6 +22,7 @@
 		0419952A1D434389003B7416 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 041995291D434389003B7416 /* KLCPopup.m */; };
 		0419952D1D434463003B7416 /* WWAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0419952C1D434463003B7416 /* WWAlertView.m */; };
 		041995301D4352E4003B7416 /* WWAlertButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0419952F1D4352E4003B7416 /* WWAlertButton.m */; };
+		248B17591D4600EF006A5D72 /* WWAlertView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 248B17581D4600EF006A5D72 /* WWAlertView+Helper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		0419952C1D434463003B7416 /* WWAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWAlertView.m; sourceTree = "<group>"; };
 		0419952E1D4352E4003B7416 /* WWAlertButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWAlertButton.h; sourceTree = "<group>"; };
 		0419952F1D4352E4003B7416 /* WWAlertButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWAlertButton.m; sourceTree = "<group>"; };
+		248B17571D4600EF006A5D72 /* WWAlertView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WWAlertView+Helper.h"; sourceTree = "<group>"; };
+		248B17581D4600EF006A5D72 /* WWAlertView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WWAlertView+Helper.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				041995241D434346003B7416 /* WWPopup.m */,
 				0419952B1D434463003B7416 /* WWAlertView.h */,
 				0419952C1D434463003B7416 /* WWAlertView.m */,
+				248B17571D4600EF006A5D72 /* WWAlertView+Helper.h */,
+				248B17581D4600EF006A5D72 /* WWAlertView+Helper.m */,
 				0419952E1D4352E4003B7416 /* WWAlertButton.h */,
 				0419952F1D4352E4003B7416 /* WWAlertButton.m */,
 				041994F71D43423D003B7416 /* Main.storyboard */,
@@ -250,6 +255,7 @@
 				041994F61D43423D003B7416 /* ViewController.m in Sources */,
 				0419952A1D434389003B7416 /* KLCPopup.m in Sources */,
 				041995301D4352E4003B7416 /* WWAlertButton.m in Sources */,
+				248B17591D4600EF006A5D72 /* WWAlertView+Helper.m in Sources */,
 				041994F31D43423D003B7416 /* AppDelegate.m in Sources */,
 				041995251D434346003B7416 /* WWPopup.m in Sources */,
 				041994F01D43423D003B7416 /* main.m in Sources */,
@@ -440,6 +446,7 @@
 				0419950F1D43423D003B7416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		041995101D43423D003B7416 /* Build configuration list for PBXNativeTarget "WWAlertTestTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +455,7 @@
 				041995121D43423D003B7416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

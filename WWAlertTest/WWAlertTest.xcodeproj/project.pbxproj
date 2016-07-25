@@ -18,11 +18,11 @@
 		0419951E1D4342D2003B7416 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0419951D1D4342D2003B7416 /* QuartzCore.framework */; };
 		041995201D4342FE003B7416 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0419951F1D4342FE003B7416 /* CoreGraphics.framework */; };
 		041995221D434304003B7416 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041995211D434304003B7416 /* UIKit.framework */; };
-		041995251D434346003B7416 /* WWPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 041995241D434346003B7416 /* WWPopup.m */; };
 		0419952A1D434389003B7416 /* KLCPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 041995291D434389003B7416 /* KLCPopup.m */; };
-		0419952D1D434463003B7416 /* WWAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0419952C1D434463003B7416 /* WWAlertView.m */; };
 		041995301D4352E4003B7416 /* WWAlertButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0419952F1D4352E4003B7416 /* WWAlertButton.m */; };
-		248B17591D4600EF006A5D72 /* WWAlertView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 248B17581D4600EF006A5D72 /* WWAlertView+Helper.m */; };
+		248B176B1D460462006A5D72 /* WWAlertView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 248B17661D460462006A5D72 /* WWAlertView+Helper.m */; };
+		248B176C1D460462006A5D72 /* WWAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 248B17681D460462006A5D72 /* WWAlertView.m */; };
+		248B176D1D460462006A5D72 /* WWPopup.m in Sources */ = {isa = PBXBuildFile; fileRef = 248B176A1D460462006A5D72 /* WWPopup.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,16 +53,16 @@
 		0419951D1D4342D2003B7416 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0419951F1D4342FE003B7416 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		041995211D434304003B7416 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		041995231D434346003B7416 /* WWPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWPopup.h; sourceTree = "<group>"; };
-		041995241D434346003B7416 /* WWPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPopup.m; sourceTree = "<group>"; };
 		041995281D434389003B7416 /* KLCPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLCPopup.h; sourceTree = "<group>"; };
 		041995291D434389003B7416 /* KLCPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLCPopup.m; sourceTree = "<group>"; };
-		0419952B1D434463003B7416 /* WWAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWAlertView.h; sourceTree = "<group>"; };
-		0419952C1D434463003B7416 /* WWAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWAlertView.m; sourceTree = "<group>"; };
 		0419952E1D4352E4003B7416 /* WWAlertButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWAlertButton.h; sourceTree = "<group>"; };
 		0419952F1D4352E4003B7416 /* WWAlertButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWAlertButton.m; sourceTree = "<group>"; };
-		248B17571D4600EF006A5D72 /* WWAlertView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WWAlertView+Helper.h"; sourceTree = "<group>"; };
-		248B17581D4600EF006A5D72 /* WWAlertView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WWAlertView+Helper.m"; sourceTree = "<group>"; };
+		248B17651D460462006A5D72 /* WWAlertView+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WWAlertView+Helper.h"; sourceTree = "<group>"; };
+		248B17661D460462006A5D72 /* WWAlertView+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WWAlertView+Helper.m"; sourceTree = "<group>"; };
+		248B17671D460462006A5D72 /* WWAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWAlertView.h; sourceTree = "<group>"; };
+		248B17681D460462006A5D72 /* WWAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWAlertView.m; sourceTree = "<group>"; };
+		248B17691D460462006A5D72 /* WWPopup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWPopup.h; sourceTree = "<group>"; };
+		248B176A1D460462006A5D72 /* WWPopup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWPopup.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,15 +118,10 @@
 				041994F21D43423D003B7416 /* AppDelegate.m */,
 				041994F41D43423D003B7416 /* ViewController.h */,
 				041994F51D43423D003B7416 /* ViewController.m */,
-				041995231D434346003B7416 /* WWPopup.h */,
-				041995241D434346003B7416 /* WWPopup.m */,
-				0419952B1D434463003B7416 /* WWAlertView.h */,
-				0419952C1D434463003B7416 /* WWAlertView.m */,
-				248B17571D4600EF006A5D72 /* WWAlertView+Helper.h */,
-				248B17581D4600EF006A5D72 /* WWAlertView+Helper.m */,
 				0419952E1D4352E4003B7416 /* WWAlertButton.h */,
 				0419952F1D4352E4003B7416 /* WWAlertButton.m */,
 				041994F71D43423D003B7416 /* Main.storyboard */,
+				248B17641D460462006A5D72 /* WWAlert */,
 				041994EE1D43423D003B7416 /* Supporting Files */,
 			);
 			path = WWAlertTest;
@@ -150,6 +145,20 @@
 				0419950A1D43423D003B7416 /* Info.plist */,
 			);
 			path = WWAlertTestTests;
+			sourceTree = "<group>";
+		};
+		248B17641D460462006A5D72 /* WWAlert */ = {
+			isa = PBXGroup;
+			children = (
+				248B17651D460462006A5D72 /* WWAlertView+Helper.h */,
+				248B17661D460462006A5D72 /* WWAlertView+Helper.m */,
+				248B17671D460462006A5D72 /* WWAlertView.h */,
+				248B17681D460462006A5D72 /* WWAlertView.m */,
+				248B17691D460462006A5D72 /* WWPopup.h */,
+				248B176A1D460462006A5D72 /* WWPopup.m */,
+			);
+			name = WWAlert;
+			path = ../../WWAlert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,13 +262,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				041994F61D43423D003B7416 /* ViewController.m in Sources */,
+				248B176B1D460462006A5D72 /* WWAlertView+Helper.m in Sources */,
+				248B176C1D460462006A5D72 /* WWAlertView.m in Sources */,
 				0419952A1D434389003B7416 /* KLCPopup.m in Sources */,
 				041995301D4352E4003B7416 /* WWAlertButton.m in Sources */,
-				248B17591D4600EF006A5D72 /* WWAlertView+Helper.m in Sources */,
 				041994F31D43423D003B7416 /* AppDelegate.m in Sources */,
-				041995251D434346003B7416 /* WWPopup.m in Sources */,
+				248B176D1D460462006A5D72 /* WWPopup.m in Sources */,
 				041994F01D43423D003B7416 /* main.m in Sources */,
-				0419952D1D434463003B7416 /* WWAlertView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

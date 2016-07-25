@@ -28,8 +28,9 @@
 - (void)testAlert
 {
     //_alertView = [WWAlertView showAlertWithTitle:@"这是一个提示测试。" ];
-    
-//    _alertView = [WWAlertView showAlertWithTitle:@"这是一个提示测试这是一个提示测试这是一个提示测试这是一个提示测试" contentText:@"这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,"];
+    /*
+    _alertView = [WWAlertView showAlertWithTitle:@"这是一个提示测试这是一个提示测试这是一个提示测试这是一个提示测试" contentText:@"这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,"];
+    */
     
     //*
     _alertView = [WWAlertView alertWithTitle:@"test" contentText:@"内容违法！！"];

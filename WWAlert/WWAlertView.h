@@ -5,6 +5,24 @@
 //  Created by Shouqiang Wei de Mac on 16/7/23.
 //  Copyright © 2016年 shouqiangwei. All rights reserved.
 //
+/* usage
+
+ _alertView = [WWAlertView showAlertWithTitle:@"这是一个提示测试。" ];
+ 
+ _alertView = [WWAlertView showAlertWithTitle:@"这是一个提示测试这是一个提示测试这是一个提示测试这是一个提示测试" contentText:@"这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,这是一个提示测试,"];
+ 
+
+_alertView = [WWAlertView alertWithTitle:@"test" contentText:@"内容违法！！"];
+[_alertView addButtonWithTitle:@"知道了" configBlock:^(UIButton *btn, id otherInfo) {
+    
+} actionBlock:^BOOL(UIButton *btn, id otherInfo) {
+    UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"test" message:@"msg" delegate:nil cancelButtonTitle:@"ok" otherButtonTitles: nil];
+    [alert show];
+    return YES;
+}];
+[_alertView show];
+
+*/
 
 #import <UIKit/UIKit.h>
 #import "WWPopup.h"
